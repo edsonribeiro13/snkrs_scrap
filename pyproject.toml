@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "snkrs-scrap"
+version = "0.1.0"
+description = ""
+authors = ["edsonribeiro13 <edson.viniciussr@gmail.com>"]
+readme = "README.md"
+packages = [{include = "snkrs_scrap"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+flask = "^2.2.2"
+python-dotenv = "^0.21.0"
+beautifulsoup4 = "^4.11.1"
+flask-sqlalchemy = "^3.0.2"
+
+
+[tool.poetry.group.dev.dependencies]
+blue = "^0.9.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
