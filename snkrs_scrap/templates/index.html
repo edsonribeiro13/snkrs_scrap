@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>SNKR SCRAP</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="sneaker-class">
+        <span class="sneaker-name-title">Nome</span>
+        <span class="sneaker-info-title">Preço</span>
+        <span class="sneaker-info-title">Data</span>
+    </div>
+    {% for snkr in snkr_tag %}
+        <div class="sneaker-class">
+            <span class="sneaker-name-class">{{snkr["name"]}}</span>
+            <span class="sneaker-info-class">R${{snkr["price"]}}</span>
+            <span class="sneaker-info-class">{{snkr["timestamp"]}}</span>
+        </div>
+    {% endfor %}
+</body>
+</html>

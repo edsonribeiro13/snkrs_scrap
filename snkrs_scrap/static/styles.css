@@ -1,0 +1,33 @@
+body{
+    background-color: floralwhite;
+}
+.sneaker-class {
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+}
+.sneaker-info-class {
+    max-width: 20%;
+    min-width: 20%;
+}
+.sneaker-info-title {
+    max-width: 20%;
+    min-width: 20%;
+    font-size: medium;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+.sneaker-name-class {
+    max-width: 40%;
+    min-width: 40%;
+}
+
+.sneaker-name-title {
+    max-width: 40%;
+    min-width: 40%;
+    font-size: medium;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Verdana, Tahoma, sans-serif;
+}
